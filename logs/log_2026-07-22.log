@@ -1,0 +1,73 @@
+2026-07-22 08:42:26,652 - INFO - Successfully read the YAML file
+2026-07-22 08:42:26,652 - INFO - Data Ingestion started with my_bucket9787 and file is Hotel_Reservations.csv
+2026-07-22 08:42:26,652 - INFO - Starting data ingestion process
+2026-07-22 08:42:29,201 - INFO - CSV file is successfully downloaded to artifacts/raw/raw.csv
+2026-07-22 08:42:29,201 - INFO - Starting the splitting process
+2026-07-22 08:42:29,475 - INFO - Train data saved to artifacts/raw/train.csv
+2026-07-22 08:42:29,475 - INFO - Test data saved to artifacts/raw/test.csv
+2026-07-22 08:42:29,477 - INFO - Data ingestion completed successfully
+2026-07-22 08:42:29,477 - INFO - Data ingestion completed
+2026-07-22 08:42:29,479 - INFO - Successfully read the YAML file
+2026-07-22 08:42:29,479 - INFO - Loading data from RAW directory
+2026-07-22 08:42:29,479 - INFO - Loading data
+2026-07-22 08:42:29,530 - INFO - Loading data
+2026-07-22 08:42:29,542 - INFO - Starting our Data Processing step
+2026-07-22 08:42:29,542 - INFO - Dropping the columns
+2026-07-22 08:42:29,561 - INFO - Applying Label Encoding
+2026-07-22 08:42:29,602 - INFO - Label Mappings are : 
+2026-07-22 08:42:29,602 - INFO - type_of_meal_plan : {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2026-07-22 08:42:29,602 - INFO - required_car_parking_space : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2026-07-22 08:42:29,602 - INFO - room_type_reserved : {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2026-07-22 08:42:29,602 - INFO - market_segment_type : {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2026-07-22 08:42:29,602 - INFO - repeated_guest : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2026-07-22 08:42:29,603 - INFO - booking_status : {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2026-07-22 08:42:29,603 - INFO - Doing Skewness HAndling
+2026-07-22 08:42:29,607 - INFO - Starting our Data Processing step
+2026-07-22 08:42:29,607 - INFO - Dropping the columns
+2026-07-22 08:42:29,614 - INFO - Applying Label Encoding
+2026-07-22 08:42:29,623 - INFO - Label Mappings are : 
+2026-07-22 08:42:29,623 - INFO - type_of_meal_plan : {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2026-07-22 08:42:29,623 - INFO - required_car_parking_space : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2026-07-22 08:42:29,623 - INFO - room_type_reserved : {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2026-07-22 08:42:29,623 - INFO - market_segment_type : {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2026-07-22 08:42:29,623 - INFO - repeated_guest : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2026-07-22 08:42:29,623 - INFO - booking_status : {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2026-07-22 08:42:29,623 - INFO - Doing Skewness HAndling
+2026-07-22 08:42:29,626 - INFO - Handling Imbalanced Data
+2026-07-22 08:42:29,745 - INFO - Data balanced sucesffuly
+2026-07-22 08:42:29,745 - INFO - Handling Imbalanced Data
+2026-07-22 08:42:29,763 - INFO - Data balanced sucesffuly
+2026-07-22 08:42:29,763 - INFO - Starting our Feature selection step
+2026-07-22 08:42:32,239 - INFO - Features selected : ['lead_time' 'no_of_special_requests' 'avg_price_per_room' 'arrival_month'
+ 'arrival_date' 'market_segment_type' 'no_of_week_nights'
+ 'no_of_weekend_nights' 'type_of_meal_plan' 'room_type_reserved']
+2026-07-22 08:42:32,240 - INFO - Feature slection completed sucesfully
+2026-07-22 08:42:32,241 - INFO - Saving our data in processed folder
+2026-07-22 08:42:32,285 - INFO - Data saved sucesfuly to artifacts/processed/processed_train.csv
+2026-07-22 08:42:32,285 - INFO - Saving our data in processed folder
+2026-07-22 08:42:32,301 - INFO - Data saved sucesfuly to artifacts/processed/processed_test.csv
+2026-07-22 08:42:32,301 - INFO - Data processing completed sucesfully
+2026-07-22 08:42:32,983 - INFO - Starting our Model Training pipeline
+2026-07-22 08:42:32,983 - INFO - Starting our MLFLOW experimentation
+2026-07-22 08:42:32,983 - INFO - Logging the training and testing dataset to MLFLOW
+2026-07-22 08:42:32,991 - INFO - Loading data from artifacts/processed/processed_train.csv
+2026-07-22 08:42:32,991 - INFO - Loading data
+2026-07-22 08:42:33,007 - INFO - Loading data from artifacts/processed/processed_test.csv
+2026-07-22 08:42:33,007 - INFO - Loading data
+2026-07-22 08:42:33,012 - INFO - Data splitted sucefully for Model Training
+2026-07-22 08:42:33,012 - INFO - Intializing our model
+2026-07-22 08:42:33,012 - INFO - Starting our Hyperparamter tuning
+2026-07-22 08:42:33,012 - INFO - Starting our Hyperparamter tuning
+2026-07-22 08:45:07,524 - INFO - Hyperparamter tuning completed
+2026-07-22 08:45:07,524 - INFO - Best paramters are : {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1293700315892974), 'max_depth': 23, 'n_estimators': 314, 'num_leaves': 94}
+2026-07-22 08:45:07,525 - INFO - Evaluating our model
+2026-07-22 08:45:07,558 - INFO - Accuracy Score : 0.8789536266349584
+2026-07-22 08:45:07,558 - INFO - Precision Score : 0.8630667578035999
+2026-07-22 08:45:07,558 - INFO - Recall Score : 0.900832342449465
+2026-07-22 08:45:07,558 - INFO - F1 Score : 0.8815452641377706
+2026-07-22 08:45:07,558 - INFO - saving the model
+2026-07-22 08:45:07,584 - INFO - Model saved to artifacts/models/lgbm_model.pkl
+2026-07-22 08:45:07,584 - INFO - Logging the model into MLFLOW
+2026-07-22 08:45:07,586 - INFO - Logging Params and metrics to MLFLOW
+2026-07-22 08:45:07,612 - INFO - Model Training successfully completed
+2026-07-22 08:45:07,612 - INFO - MLflow Run ID: 0e89d10595cd433f8a9a4207b726e671

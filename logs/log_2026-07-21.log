@@ -1,0 +1,48 @@
+2026-07-21 11:48:21,788 - INFO - Starting our Model Training pipeline
+2026-07-21 11:48:21,788 - INFO - Starting our MLFLOW experimentation
+2026-07-21 11:48:21,788 - INFO - Logging the training and testing datset to MLFLOW
+2026-07-21 11:48:21,799 - INFO - Loading data from artifacts/processed/processed_train.csv
+2026-07-21 11:48:21,799 - INFO - Loading data
+2026-07-21 11:48:21,818 - INFO - Loading data from artifacts/processed/processed_test.csv
+2026-07-21 11:48:21,818 - INFO - Loading data
+2026-07-21 11:48:21,828 - INFO - Data splitted sucefully for Model Training
+2026-07-21 11:48:21,828 - INFO - Intializing our model
+2026-07-21 11:48:21,828 - INFO - Starting our Hyperparamter tuning
+2026-07-21 11:48:21,828 - INFO - Starting our Hyperparamter tuning
+2026-07-21 11:49:17,420 - INFO - Hyperparamter tuning completed
+2026-07-21 11:49:17,420 - INFO - Best paramters are : {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1293700315892974), 'max_depth': 23, 'n_estimators': 314, 'num_leaves': 94}
+2026-07-21 11:49:17,420 - INFO - Evaluating our model
+2026-07-21 11:49:17,454 - INFO - Accuracy Score : 0.8789536266349584
+2026-07-21 11:49:17,454 - INFO - Precision Score : 0.8630667578035999
+2026-07-21 11:49:17,454 - INFO - Recall Score : 0.900832342449465
+2026-07-21 11:49:17,454 - INFO - F1 Score : 0.8815452641377706
+2026-07-21 11:49:17,454 - INFO - saving the model
+2026-07-21 11:49:17,484 - INFO - Model saved to artifacts/models/lgbm_model.pkl
+2026-07-21 11:49:17,484 - INFO - Logging the model into MLFLOW
+2026-07-21 11:49:17,485 - INFO - Logging Params and metrics to MLFLOW
+2026-07-21 11:49:17,501 - INFO - Model Training sucesfullly completed
+2026-07-21 12:34:27,528 - ERROR - Error in model training pipeline The filesystem tracking backend (e.g., './mlruns') is in maintenance mode and will not receive further updates. Please migrate to a database backend (e.g., 'sqlite:///mlflow.db') to access the latest MLflow features. The `mlflow migrate-filestore` tool migrates your existing data losslessly. See https://mlflow.org/docs/latest/self-hosting/migrate-from-file-store for migration guidance. If the filesystem backend is required for your workflow, set `MLFLOW_ALLOW_FILE_STORE=true` to opt out of this exception.
+2026-07-21 12:34:52,383 - INFO - Starting our Model Training pipeline
+2026-07-21 12:34:52,383 - INFO - Starting our MLFLOW experimentation
+2026-07-21 12:34:52,383 - INFO - Logging the training and testing dataset to MLFLOW
+2026-07-21 12:34:52,391 - INFO - Loading data from artifacts/processed/processed_train.csv
+2026-07-21 12:34:52,391 - INFO - Loading data
+2026-07-21 12:34:52,410 - INFO - Loading data from artifacts/processed/processed_test.csv
+2026-07-21 12:34:52,410 - INFO - Loading data
+2026-07-21 12:34:52,417 - INFO - Data splitted sucefully for Model Training
+2026-07-21 12:34:52,418 - INFO - Intializing our model
+2026-07-21 12:34:52,418 - INFO - Starting our Hyperparamter tuning
+2026-07-21 12:34:52,418 - INFO - Starting our Hyperparamter tuning
+2026-07-21 12:35:41,553 - INFO - Hyperparamter tuning completed
+2026-07-21 12:35:41,553 - INFO - Best paramters are : {'boosting_type': 'gbdt', 'learning_rate': np.float64(0.1293700315892974), 'max_depth': 23, 'n_estimators': 314, 'num_leaves': 94}
+2026-07-21 12:35:41,553 - INFO - Evaluating our model
+2026-07-21 12:35:41,585 - INFO - Accuracy Score : 0.8789536266349584
+2026-07-21 12:35:41,585 - INFO - Precision Score : 0.8630667578035999
+2026-07-21 12:35:41,585 - INFO - Recall Score : 0.900832342449465
+2026-07-21 12:35:41,585 - INFO - F1 Score : 0.8815452641377706
+2026-07-21 12:35:41,585 - INFO - saving the model
+2026-07-21 12:35:41,603 - INFO - Model saved to artifacts/models/lgbm_model.pkl
+2026-07-21 12:35:41,604 - INFO - Logging the model into MLFLOW
+2026-07-21 12:35:41,605 - INFO - Logging Params and metrics to MLFLOW
+2026-07-21 12:35:41,625 - INFO - Model Training successfully completed
+2026-07-21 12:35:41,625 - INFO - MLflow Run ID: e8b44ace69a34d218aa72b8cc42e17fc

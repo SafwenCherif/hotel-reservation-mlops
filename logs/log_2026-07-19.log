@@ -1,0 +1,23 @@
+2026-07-19 13:03:51,607 - INFO - Division successful: 10 / 2 = 5.0
+2026-07-19 13:03:51,607 - ERROR - Attempted to divide by zero: 10 / 0
+2026-07-19 13:03:51,607 - ERROR - CustomException caught: Error in /home/safwen-cherif/Mlops Projects/Hotel Reservation 1/testing.py , line 9 : Division by zero is not allowed.
+2026-07-19 13:04:21,671 - ERROR - Attempted to divide by zero: 10 / 0
+2026-07-19 13:04:21,671 - ERROR - CustomException caught: Error in /home/safwen-cherif/Mlops Projects/Hotel Reservation 1/testing.py , line 9 : Division by zero is not allowed.
+2026-07-19 15:44:50,766 - INFO - Successfully read the YAML file
+2026-07-19 15:44:50,767 - INFO - Data Ingestion started with my_bucket9787 and file is Hotel_Reservations.csv
+2026-07-19 15:44:50,767 - INFO - Starting data ingestion process
+2026-07-19 15:44:53,645 - INFO - CSV file is successfully downloaded to artifacts/raw/raw.csv
+2026-07-19 15:44:53,645 - INFO - Starting the splitting process
+2026-07-19 15:44:53,863 - INFO - Train data saved to artifacts/raw/train.csv
+2026-07-19 15:44:53,863 - INFO - Test data saved to artifacts/raw/test.csv
+2026-07-19 15:44:53,866 - INFO - Data ingestion completed successfully
+2026-07-19 15:44:53,866 - INFO - Data ingestion completed
+2026-07-19 22:14:58,467 - INFO - Successfully read the YAML file
+2026-07-19 22:14:58,468 - INFO - Data Ingestion started with my_bucket9787 and file is Hotel_Reservations.csv
+2026-07-19 22:14:58,468 - INFO - Starting data ingestion process
+2026-07-19 22:15:02,023 - INFO - CSV file is successfully downloaded to artifacts/raw/raw.csv
+2026-07-19 22:15:02,023 - INFO - Starting the splitting process
+2026-07-19 22:15:02,164 - INFO - Train data saved to artifacts/raw/train.csv
+2026-07-19 22:15:02,164 - INFO - Test data saved to artifacts/raw/test.csv
+2026-07-19 22:15:02,165 - INFO - Data ingestion completed successfully
+2026-07-19 22:15:02,165 - INFO - Data ingestion completed

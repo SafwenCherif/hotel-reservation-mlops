@@ -1,0 +1,48 @@
+2026-07-20 18:54:50,743 - INFO - Successfully read the YAML file
+2026-07-20 18:54:50,744 - INFO - Loading data from RAW directory
+2026-07-20 18:54:50,744 - INFO - Loading data
+2026-07-20 18:54:50,790 - INFO - Loading data
+2026-07-20 18:54:50,799 - INFO - Starting our Data Processing step
+2026-07-20 18:54:50,799 - INFO - Dropping the columns
+2026-07-20 18:54:50,801 - ERROR - Error during preprocess step "['Unnamed: 0'] not found in axis"
+2026-07-20 18:54:50,801 - ERROR - Error during preprocessing pipeline Error in /home/safwen-cherif/Mlops Projects/Hotel Reservation 1/src/data_preprocessing.py , line 32 : Error while preprocess data
+2026-07-20 18:55:29,739 - INFO - Successfully read the YAML file
+2026-07-20 18:55:29,739 - INFO - Loading data from RAW directory
+2026-07-20 18:55:29,739 - INFO - Loading data
+2026-07-20 18:55:29,780 - INFO - Loading data
+2026-07-20 18:55:29,788 - INFO - Starting our Data Processing step
+2026-07-20 18:55:29,788 - INFO - Dropping the columns
+2026-07-20 18:55:29,803 - INFO - Applying Label Encoding
+2026-07-20 18:55:29,832 - INFO - Label Mappings are : 
+2026-07-20 18:55:29,832 - INFO - type_of_meal_plan : {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2026-07-20 18:55:29,832 - INFO - required_car_parking_space : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2026-07-20 18:55:29,832 - INFO - room_type_reserved : {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2026-07-20 18:55:29,832 - INFO - market_segment_type : {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2026-07-20 18:55:29,832 - INFO - repeated_guest : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2026-07-20 18:55:29,832 - INFO - booking_status : {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2026-07-20 18:55:29,832 - INFO - Doing Skewness HAndling
+2026-07-20 18:55:29,835 - INFO - Starting our Data Processing step
+2026-07-20 18:55:29,835 - INFO - Dropping the columns
+2026-07-20 18:55:29,838 - INFO - Applying Label Encoding
+2026-07-20 18:55:29,842 - INFO - Label Mappings are : 
+2026-07-20 18:55:29,843 - INFO - type_of_meal_plan : {'Meal Plan 1': np.int64(0), 'Meal Plan 2': np.int64(1), 'Meal Plan 3': np.int64(2), 'Not Selected': np.int64(3)}
+2026-07-20 18:55:29,843 - INFO - required_car_parking_space : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2026-07-20 18:55:29,843 - INFO - room_type_reserved : {'Room_Type 1': np.int64(0), 'Room_Type 2': np.int64(1), 'Room_Type 3': np.int64(2), 'Room_Type 4': np.int64(3), 'Room_Type 5': np.int64(4), 'Room_Type 6': np.int64(5), 'Room_Type 7': np.int64(6)}
+2026-07-20 18:55:29,843 - INFO - market_segment_type : {'Aviation': np.int64(0), 'Complementary': np.int64(1), 'Corporate': np.int64(2), 'Offline': np.int64(3), 'Online': np.int64(4)}
+2026-07-20 18:55:29,843 - INFO - repeated_guest : {np.int64(0): np.int64(0), np.int64(1): np.int64(1)}
+2026-07-20 18:55:29,843 - INFO - booking_status : {'Canceled': np.int64(0), 'Not_Canceled': np.int64(1)}
+2026-07-20 18:55:29,843 - INFO - Doing Skewness HAndling
+2026-07-20 18:55:29,844 - INFO - Handling Imbalanced Data
+2026-07-20 18:55:29,912 - INFO - Data balanced sucesffuly
+2026-07-20 18:55:29,912 - INFO - Handling Imbalanced Data
+2026-07-20 18:55:29,920 - INFO - Data balanced sucesffuly
+2026-07-20 18:55:29,920 - INFO - Starting our Feature selection step
+2026-07-20 18:55:32,137 - INFO - Features selected : ['lead_time' 'no_of_special_requests' 'avg_price_per_room' 'arrival_month'
+ 'arrival_date' 'market_segment_type' 'no_of_week_nights'
+ 'no_of_weekend_nights' 'type_of_meal_plan' 'room_type_reserved']
+2026-07-20 18:55:32,137 - INFO - Feature slection completed sucesfully
+2026-07-20 18:55:32,138 - INFO - Saving our data in processed folder
+2026-07-20 18:55:32,184 - INFO - Data saved sucesfuly to artifacts/processed/processed_train.csv
+2026-07-20 18:55:32,184 - INFO - Saving our data in processed folder
+2026-07-20 18:55:32,197 - INFO - Data saved sucesfuly to artifacts/processed/processed_test.csv
+2026-07-20 18:55:32,197 - INFO - Data processing completed sucesfully
