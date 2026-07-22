@@ -80,7 +80,11 @@ pipeline {
                         --image=gcr.io/${GCP_PROJECT}/${IMAGE_NAME}:latest \
                         --platform=managed \
                         --region=us-central1 \
-                        --allow-unauthenticated
+                        --allow-unauthenticated \
+                        --timeout=300 \
+                        --memory=1Gi \
+                        --cpu=1 \
+                        --concurrency=80
                     '''
                 }
             }
