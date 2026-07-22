@@ -32,13 +32,24 @@ pipeline {
             }
         }
 
+        stage('Running Training Pipeline (with ADC mounted)') {
+            steps {
+                sh '''
+                . ${VENV_DIR}/bin/activate
+                export PATH=$PATH:/usr/bin
+                export GOOGLE_APPLICATION_CREDENTIALS="/home/jenkins/.config/gcloud/application_default_credentials.json"
+                export GOOGLE_CLOUD_PROJECT="${GCP_PROJECT}"
+                python pipeline/training_pipeline.py
+                '''
+            }
+        }
+
         stage('Building and Pushing Docker Image to GCR') {
             steps {
                 script {
                     sh '''
                     export PATH=$PATH:/usr/bin
 
-                    # Use mounted ADC credentials (no service account key needed)
                     gcloud config set project ${GCP_PROJECT}
                     gcloud auth configure-docker --quiet
 

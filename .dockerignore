@@ -7,10 +7,12 @@ __pycache__/
 logs/
 mlruns/
 mlflow.db
-artifacts/
+artifacts/raw/
+artifacts/processed/
 notebook/
 materials/
 Materials/
+custom_jenkins/
 .git/
 .gitignore
 .env
