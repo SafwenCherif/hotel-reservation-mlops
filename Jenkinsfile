@@ -5,6 +5,7 @@ pipeline {
         VENV_DIR = 'venv'
         GCP_PROJECT = "project-150342d7-e272-4d0c-ab9"
         IMAGE_NAME = "ml-project"
+        GOOGLE_APPLICATION_CREDENTIALS = "/home/jenkins/.config/gcloud/application_default_credentials.json"
     }
 
     stages {
@@ -49,9 +50,14 @@ pipeline {
                 script {
                     sh '''
                     export PATH=$PATH:/usr/bin
+                    export CLOUDSDK_PYTHON=/usr/bin/python3
 
+                    # Use the user OAuth credentials mounted from host's ADC
                     gcloud config set project ${GCP_PROJECT}
-                    gcloud auth configure-docker --quiet
+                    gcloud config set auth/credential_file_override ${GOOGLE_APPLICATION_CREDENTIALS}
+
+                    # Get a fresh token and authenticate docker with gcloud
+                    gcloud auth configure-docker --quiet gcr.io
 
                     docker build -t gcr.io/${GCP_PROJECT}/${IMAGE_NAME}:latest .
                     docker push gcr.io/${GCP_PROJECT}/${IMAGE_NAME}:latest
@@ -65,8 +71,10 @@ pipeline {
                 script {
                     sh '''
                     export PATH=$PATH:/usr/bin
+                    export CLOUDSDK_PYTHON=/usr/bin/python3
 
                     gcloud config set project ${GCP_PROJECT}
+                    gcloud config set auth/credential_file_override ${GOOGLE_APPLICATION_CREDENTIALS}
 
                     gcloud run deploy ${IMAGE_NAME} \
                         --image=gcr.io/${GCP_PROJECT}/${IMAGE_NAME}:latest \
