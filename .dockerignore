@@ -1,0 +1,17 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+logs/
+mlruns/
+mlflow.db
+artifacts/
+notebook/
+materials/
+Materials/
+.git/
+.gitignore
+.env
+*.log
